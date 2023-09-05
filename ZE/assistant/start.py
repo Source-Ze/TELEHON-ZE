@@ -9,8 +9,8 @@ from telethon.errors import UserIsBlockedError
 from telethon.events import CallbackQuery, StopPropagation
 from telethon.utils import get_display_name
 
-from UI_XB import Config
-from UI_XB import UI_XB as sbb_b
+from ZE import Config
+from ZE import ZE as sbb_b
 
 from ..core import check_owner, pool
 from ..core.logger import logging
@@ -111,7 +111,7 @@ async def bot_start(event):
                         \nيمكنك التواصل مع ي من خلال هذا البوت"
         buttons = [
             (
-                Button.url("• السورس •", "https://t.me/UI_XB"),
+                Button.url("• السورس •", "https://t.me/ZE"),
                 Button.url(
                     "• المطور •",
                     "https://t.me/UP_UO",

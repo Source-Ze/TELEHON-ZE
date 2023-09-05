@@ -1,6 +1,6 @@
 FROM SOURCE-ZE/ZE:slim-buster
 
-RUN git clone https://github.com/SOURCE-SPIDER/WWWL5.git /root/ZE
+RUN git clone https://github.com/Source-Ze/TELEHON-ZE.git /root/ZE
 
 WORKDIR /root/ZE
 

@@ -1,5 +1,5 @@
-from WWWL5.Config import Config
-from WWWL5.plugins import mention
+from ZE.Config import Config
+from ZE.plugins import mention
 
 RAZAN = Config.TG_BOT_USERNAME
 # for alive

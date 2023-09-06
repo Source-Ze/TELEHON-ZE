@@ -94,9 +94,9 @@ async def safe_check_text(msg):  # sourcery no-metrics
     if not msg:
         return False
     msg = str(msg)
-    from .session import WWWL5
+    from .session import ZE
 
-    phone = str((await WWWL5.get_entity(WWWL5.uid)).phone)
+    phone = str((await ZE.get_entity(ZE.uid)).phone)
     return bool(
         (
             (Config.STRING_SESSION in msg)
@@ -502,4 +502,4 @@ async def edit_message(
     )
 
 
-# جميع الحقوق خاصه بسورس سبايدر
+# جميع الحقوق خاصه بسورس زد إي

@@ -18,7 +18,7 @@ else:
     session = "jmthon"
 
 try:
-    WWWL5 = JmthonClient(
+    ZE = JmthonClient(
         session=session,
         api_id=Config.APP_ID,
         api_hash=Config.API_HASH,
@@ -36,7 +36,7 @@ except Exception as e:
 
 try:
     if Config.STRING_SESSION2:
-        WWWL52 = JmthonClient(
+        ZE2 = JmthonClient(
             bothseesion(Config.STRING_SESSION2, LOGS),
             api_id=Config.APP_ID,
             api_hash=Config.API_HASH,
@@ -47,13 +47,13 @@ try:
             connection_retries=None,
         )
     else:
-        WWWL52 = None
+        ZE2 = None
 except Exception as e:
     print(f"STRING_SESSION2 - {str(e)}")
     sys.exit()
 
 
-WWWL5.tgbot = tgbot = JmthonClient(
+ZE.tgbot = tgbot = JmthonClient(
     session="jmthonTgbot",
     api_id=Config.APP_ID,
     api_hash=Config.API_HASH,
